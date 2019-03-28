@@ -46,67 +46,67 @@ public class sort {
 	}
 
 	public static void print() {
-//		for (int j = 0; j < 6; j++) {
-//			long start = System.currentTimeMillis();
-//			if (j % 2 == 0) {
-//				for (int k = 0; k < 10; k++) {
-//					init(j);
-//					bubbleSort(n - 1);
-//				}
-//			} else {
-//				init(j);
-//				bubbleSort(n - 1);
-//			}
-//			long end = System.currentTimeMillis();
-//			double t = (end - start) / 1000.0;
-//			time[0][j] = t;
-//		}
-//		for (int j = 0; j < 6; j++) {
-//			long start = System.currentTimeMillis();
-//			if (j % 2 == 0) {
-//				for (int k = 0; k < 10; k++) {
-//					init(j);
-//					selectionSort(n - 1);
-//				}
-//			} else {
-//				init(j);
-//				selectionSort(n - 1);
-//			}
-//			long end = System.currentTimeMillis();
-//			double t = (end - start) / 1000.0;
-//			time[1][j] = t;
-//			// System.out.print(t + "s ");
-//		}
-//		for (int j = 0; j < 6; j++) {
-//			long start = System.currentTimeMillis();
-//			if (j % 2 == 0) {
-//				for (int k = 0; k < 10; k++) {
-//					init(j);
-//					insertionSort(n - 1);
-//				}
-//			} else {
-//				init(j);
-//				insertionSort(n - 1);
-//			}
-//			long end = System.currentTimeMillis();
-//			double t = (end - start) / 1000.0;
-//			time[2][j] = t;
-//		}
-//		for (int j = 0; j < 6; j++) {
-//			long start = System.currentTimeMillis();
-//			if (j % 2 == 0) {
-//				for (int k = 0; k < 10; k++) {
-//					init(j);
-//					mergeSort(0, n - 1);
-//				}
-//			} else {
-//				init(j);
-//				mergeSort(0, n - 1);
-//			}
-//			long end = System.currentTimeMillis();
-//			double t = (end - start) / 1000.0;
-//			time[3][j] = t;
-//		}
+		for (int j = 0; j < 6; j++) {
+			long start = System.currentTimeMillis();
+			if (j % 2 == 0) {
+				for (int k = 0; k < 10; k++) {
+					init(j);
+					bubbleSort(n - 1);
+				}
+			} else {
+				init(j);
+				bubbleSort(n - 1);
+			}
+			long end = System.currentTimeMillis();
+			double t = (end - start) / 1000.0;
+			time[0][j] = t;
+		}
+		for (int j = 0; j < 6; j++) {
+			long start = System.currentTimeMillis();
+			if (j % 2 == 0) {
+				for (int k = 0; k < 10; k++) {
+					init(j);
+					selectionSort(n - 1);
+				}
+			} else {
+				init(j);
+				selectionSort(n - 1);
+			}
+			long end = System.currentTimeMillis();
+			double t = (end - start) / 1000.0;
+			time[1][j] = t;
+			// System.out.print(t + "s ");
+		}
+		for (int j = 0; j < 6; j++) {
+			long start = System.currentTimeMillis();
+			if (j % 2 == 0) {
+				for (int k = 0; k < 10; k++) {
+					init(j);
+					insertionSort(n - 1);
+				}
+			} else {
+				init(j);
+				insertionSort(n - 1);
+			}
+			long end = System.currentTimeMillis();
+			double t = (end - start) / 1000.0;
+			time[2][j] = t;
+		}
+		for (int j = 0; j < 6; j++) {
+			long start = System.currentTimeMillis();
+			if (j % 2 == 0) {
+				for (int k = 0; k < 10; k++) {
+					init(j);
+					mergeSort(0, n - 1);
+				}
+			} else {
+				init(j);
+				mergeSort(0, n - 1);
+			}
+			long end = System.currentTimeMillis();
+			double t = (end - start) / 1000.0;
+			time[3][j] = t;
+		}
 		System.out.print("\nquick1    ");
 		for (int j = 0; j < 6; j++) {
 			long start = System.currentTimeMillis();
@@ -124,36 +124,36 @@ public class sort {
 			System.out.print(t+"   ");
 			time[4][j] = t;
 		}
-//		for (int j = 0; j < 6; j++) {
-//			long start = System.currentTimeMillis();
-//			if (j % 2 == 0) {
-//				init(j);
-//				for (int k = 0; k < 10; k++) {
-//					quickSort_MP( 0, n - 1);
-//				}
-//			} else {
-//				init(j);
-//				quickSort_MP(0, n - 1);
-//				}
-//			long end = System.currentTimeMillis();
-//			double t = (end - start) / 1000.0;
-//			time[5][j] = t;
-//			}
-//		for (int j = 0; j < 6; j++) {
-//			long start = System.currentTimeMillis();
-//			if (j % 2 == 0) {
-//				for (int k = 0; k < 10; k++) {
-//					init(j);
-//					quickSort_RP(0, n - 1);
-//				}
-//			} else {
-//				init(j);
-//				quickSort_RP(0, n - 1);
-//			}
-//			long end = System.currentTimeMillis();
-//			double t = (end - start) / 1000.0;
-//			time[6][j] = t;
-//		}
+		for (int j = 0; j < 6; j++) {
+			long start = System.currentTimeMillis();
+			if (j % 2 == 0) {
+				init(j);
+				for (int k = 0; k < 10; k++) {
+					quickSort_MP( 0, n - 1);
+				}
+			} else {
+				init(j);
+				quickSort_MP(0, n - 1);
+				}
+			long end = System.currentTimeMillis();
+			double t = (end - start) / 1000.0;
+			time[5][j] = t;
+			}
+		for (int j = 0; j < 6; j++) {
+			long start = System.currentTimeMillis();
+			if (j % 2 == 0) {
+				for (int k = 0; k < 10; k++) {
+					init(j);
+					quickSort_RP(0, n - 1);
+				}
+			} else {
+				init(j);
+				quickSort_RP(0, n - 1);
+			}
+			long end = System.currentTimeMillis();
+			double t = (end - start) / 1000.0;
+			time[6][j] = t;
+		}
 	}
 
 	public static void bubbleSort(int r) {
